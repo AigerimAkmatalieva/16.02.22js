@@ -23,3 +23,15 @@ document.querySelector('input[type="checkbox"]')
     alert('You are unemployed')
    }
 });
+document.querySelector('input[type="text"]') 
+.addEventListener('change', function() {
+ console.log("change event triggered")
+});
+document.querySelector('input[type="text"]') 
+.addEventListener('input', function() {
+ console.log("input event triggered")
+});
+document.querySelector('input[type="text"]') 
+.addEventListener('keydown', function() {
+ console.log("keydown event triggered")
+});
