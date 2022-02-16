@@ -1,8 +1,10 @@
 document.querySelector('input[type="text"]') 
 .addEventListener('focus', function() {
-  this.value = "Hello";
+  this.style.borderColor = "initial"
 });
 document.querySelector('input[type="text"]') 
 .addEventListener('blur', function() {
-  this.value = "bye";
+  if (this.value ==false) {
+   this.style.borderColor = "red"
+  }
 })
