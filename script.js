@@ -8,3 +8,8 @@ document.querySelector('input[type="text"]')
    this.style.borderColor = "red"
   }
 })
+
+document.querySelector('input[type="text"]') 
+.addEventListener('change', function() {
+  alert('Change')
+});
