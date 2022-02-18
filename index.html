@@ -5,40 +5,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScript</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+ 
+<div>
+  <input type="text" id="text" name="text"> 
+  <h1 id="text">Hello world</h1>
+</div>
   <div>
-    <label for="full name">Full name</label>
-    <input type="text" id="full name">
-  </div>
- <div>
-  <label for="employed">
-    <input type="checkbox" id="employed">Employed
+    <label for="head">Color</label>
+    <input type="color" id="color" name="head"
+ value="">
+</div>
+<div>
+  <label for="head">Backgroundcolor</label>
+  <input type="color" id="bgcolor" name="head"
+         value="">
+</div>
+
+<div>
+  <label for="font">Font family</label>
+  <select id="font">
+    <option id="times">Times</option>
+    <option id="ariel">Ariel</option>
+    <option id="impract">Impract</option>
+    <option id="verdana">Verdana</option>
+    
+  </select>
+</div>
+<div>
+
+  <br>
+
+  <label for="range">Font-size</label>
+  <input type="range" id="range" name="range"
+         value="32" min="16" max="50" step="1">
+</div>
+<br>
+
+<div>
+  <label for="gender-undisclosed">
+    <input type="radio" name="gender" id="bold" value="100px" step="1"> Bold
   </label>
-  
- </div>
-  <div>
-    <label for="gender-undisclosed">
-      <input type="checkbox" name="" class="gender-undisclosed">classified
-    </label>
-    <label for="gender-male">
-      <input type="checkbox" name="" class="gender-male">classified
-    </label>
-    <label for="gender-undisclosed">
-      <input type="checkbox" name="" class="gender-undisclosed">classified
-    </label>
-  </div>
-  <div>
-    <label for="city">city</label>
-    <select>
-      <option>Karakol</option>
-      <option>Bishkek</option>
-      <option>Talas</option>
-      <option>Naryn</option>
-      <option>Chui</option>
-      <option>Batken</option>
-    </select>
-  </div>
+  <label for="gender-male">
+    <input type="radio" name="gender" id="italic" "> Italic
+  </label>
+  <label for="gender-female">
+    <input type="radio" name="gender" id="underline" value="underline"> Underline
+  </label>
+</div>
+
+
+<br>
+
+<div>
+  Border:
+  <label>
+    <input type="radio" name="gender" value="none" checked> none
+  </label>
+  <label>
+    <input type="radio" name="border" value="solid" > solid
+  </label>
+  <label>
+    <input type="radio" name="border"  value="dashed"> dashed
+  </label>
+  <label>
+    <input type="radio" name="border"  value="dotted"> dotted
+  </label>
+</div>
   <script src="./script.js"></script>
 </body>
 </html>
