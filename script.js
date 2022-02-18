@@ -1,37 +1,40 @@
-document.querySelector('input[type="text"]') 
-.addEventListener('focus', function() {
-  this.style.borderColor = "initial"
-});
-document.querySelector('input[type="text"]') 
-.addEventListener('blur', function() {
-  if (this.value ==false) {
-   this.style.borderColor = "red"
-  }
-})
 
-document.querySelector('input[type="text"]') 
-.addEventListener('change', function() {
-  alert('Change')
+ let h1 = document.querySelector('h1');
+
+
+ document.querySelector('#text').addEventListener('input', function () {
+ h1.textContent = this.value;
+
 });
 
-document.querySelector('input[type="checkbox"]') 
-.addEventListener('change', function() {
-  if (this.checked) {
-    alert('You are employed');
-   }
-  else {
-    alert('You are unemployed')
-   }
+
+ document.querySelector('#color').addEventListener('input', function () {
+ h1.style.color = this.value;
 });
-document.querySelector('input[type="text"]') 
-.addEventListener('change', function() {
- console.log("change event triggered")
+
+ document.querySelector('#bgcolor').addEventListener('input', function () {
+ h1.style.backgroundColor = this.value;
 });
-document.querySelector('input[type="text"]') 
-.addEventListener('input', function() {
- console.log("input event triggered")
-});
-document.querySelector('input[type="text"]') 
-.addEventListener('keydown', function() {
- console.log("keydown event triggered")
-});
+
+
+document.querySelector('#range').addEventListener('input', function () {
+  h1.style.fontSize = this.value + 'px';
+ });
+ 
+ document.querySelector('#bold').addEventListener('input', function () {
+  h1.style.fontWeight = this.checked ? 'bold' : 'normal';
+ });
+
+ document.querySelector('#italic').addEventListener('input', function () {
+  h1.style.fontWeight = this.checked ? 'italic' : 'normal';
+ });
+
+ document.querySelector('#underline').addEventListener('input', function () {
+  h1.style.fontWeight = this.checked ? 'underline' : 'normal';
+ });
+ 
+
+ document.querySelector('border').addEventListener('input', function () {
+  h1.style.borderRadius = this.value;
+ });
+ 
